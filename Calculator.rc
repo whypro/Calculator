@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Calculator.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Calculator.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 218, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于..."
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,15,11,20,20
+    LTEXT           "Calculator Ver0.8",IDC_STATIC,49,12,151,8,SS_NOPREFIX
+    LTEXT           "By whypro    2010-04-03",IDC_STATIC,49,23,151,8
+    PUSHBUTTON      "确定",IDOK,24,71,38,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,155,71,38,14,WS_GROUP
+    PUSHBUTTON      "Click Me!",IDC_ABOUT_TXT,16,47,185,17,BS_CENTER | 
+                    BS_VCENTER | BS_FLAT | NOT WS_TABSTOP
+    LTEXT           "Last Modify  2010-04-16 ",IDC_STATIC,49,34,151,8
+END
+
+IDD_CALCULATOR_DIALOG DIALOGEX 0, 0, 186, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "计算器"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_INPUT,13,15,160,15,ES_AUTOHSCROLL
+    LTEXT           "=",IDC_STATIC,13,36,8,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_OUTPUT,22,36,151,15,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    PUSHBUTTON      "C",IDC_CTR_C,23,61,27,15
+    PUSHBUTTON      "←",IDC_CTR_BKSPC,61,61,27,15
+    PUSHBUTTON      "About",IDC_CTR_ABOUT,99,61,27,15
+    PUSHBUTTON      "OFF",IDC_CTR_OFF,137,61,27,15
+    PUSHBUTTON      "1",IDC_NUM_1,22,80,27,15
+    PUSHBUTTON      "2",IDC_NUM_2,50,80,27,15
+    PUSHBUTTON      "3",IDC_NUM_3,78,80,27,15
+    PUSHBUTTON      "4",IDC_NUM_4,22,96,27,15
+    PUSHBUTTON      "5",IDC_NUM_5,50,96,27,15
+    PUSHBUTTON      "6",IDC_NUM_6,78,96,27,15
+    PUSHBUTTON      "7",IDC_NUM_7,22,112,27,15
+    PUSHBUTTON      "8",IDC_NUM_8,50,112,27,15
+    PUSHBUTTON      "9",IDC_NUM_9,78,112,27,15
+    PUSHBUTTON      "0",IDC_NUM_0,22,128,27,15
+    PUSHBUTTON      ".",IDC_DOT,50,128,27,15
+    PUSHBUTTON      "+/-",IDC_NEG,78,128,27,15
+    PUSHBUTTON      "(",IDC_LEFT_BR,109,80,27,15
+    PUSHBUTTON      ")",IDC_RIGHT_BR,137,80,27,15
+    PUSHBUTTON      "*",IDC_OP_MULTI,109,96,27,15
+    PUSHBUTTON      "/",IDC_OP_DIV,137,96,27,15
+    PUSHBUTTON      "+",IDC_OP_PLUS,109,112,27,15
+    PUSHBUTTON      "-",IDC_OP_MINUS,137,112,27,15
+    PUSHBUTTON      "=",IDC_CALC,109,128,55,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,8,2,0
+ PRODUCTVERSION 0,8,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Whypro Studio\0"
+            VALUE "FileDescription", "Calculator\0"
+            VALUE "FileVersion", "0, 8, 2, 0\0"
+            VALUE "InternalName", "Calculator\0"
+            VALUE "LegalCopyright", "Copyleft 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Calculator.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Calculator\0"
+            VALUE "ProductVersion", "0, 8, 2, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_CALCULATOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 148
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Calculator(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Calculator.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
